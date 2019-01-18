@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/electron-webpack/tsconfig-base.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "strict": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "baseUrl": "./src"
+  }
+}

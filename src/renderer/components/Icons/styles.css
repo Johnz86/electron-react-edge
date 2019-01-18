@@ -1,0 +1,8 @@
+.c-icon {
+  display: inline-block;
+}
+
+.c-icon svg {
+  width: 100%;
+  height: 100%;
+}

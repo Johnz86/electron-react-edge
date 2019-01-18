@@ -1,0 +1,12 @@
+{
+  "app":{
+    "name": "Beispielanwendung"
+  },
+  "update": {
+    "newVersionDownloaded": "Eine neue Version von? wurde heruntergeladen",
+    "installRelaunch": "Installieren und neu starten",
+    "later": "Später",
+    "releaseAvailable": "Die Version ? ist nun verfügbar. Sie wird beim nächsten Neustart der Anwendung installiert.",
+    "releaseNotes": "\n\nVersionshinweise:\n\n?"
+  }
+}

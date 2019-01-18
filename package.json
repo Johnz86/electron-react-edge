@@ -1,0 +1,45 @@
+{
+  "name": "electron-react-edge",
+  "version": "0.1.0",
+  "description": "Starter project for Electron React/TypeScript",
+  "productName": "Sample Application",
+  "main": "dist/main/main.js",
+  "license": "ISC",
+  "author": "Jan Jakubcik <jan.jakubcik@gmail.com>",
+  "keywords": [
+    "electron",
+    "react",
+    "typescript",
+    "webpack",
+    "starter"
+  ],
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "electron-log": "^2.2.17",
+    "electron-updater": "^4.0.6",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "@types/classnames": "^2.2.7",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/semver": "^5.5.0",
+    "electron": "4.0.1",
+    "electron-builder": "20.32.0",
+    "electron-webpack": "^2.6.2",
+    "electron-webpack-ts": "^3.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.2.2",
+    "webpack": "4.28.4"
+  }
+}
