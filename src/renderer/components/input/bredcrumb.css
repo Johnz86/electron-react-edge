@@ -1,0 +1,47 @@
+.c-nav__fileinput{
+    background-color: var(--color-sidebar-header);
+    color: var(--color-sidebar-text);
+    padding: 0em 0.4em;
+    height: 2.1em;
+    overflow:  hidden;
+}
+.c-nav__pathinput{
+  color: var(--color-sidebar-text);
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: calc(1em / 2);
+  line-height: 2.1em;
+
+}
+.c-breadcrumb {
+  width: 100vw;
+}
+.c-breadcrumb__step {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  line-height: 1.6em;
+  padding: 0 0.2em 0 0.2em;
+  margin: 0.2em 0;
+  position: relative;
+  transition: background 0.5s;
+}
+.c-breadcrumb__step:first-child {
+  padding-left: calc(1em / 2);
+}
+.c-breadcrumb__step:last-child {
+  padding-right: 1em;
+  color: var(--color-tab-select);
+}
+.c-breadcrumb__step+.c-breadcrumb__step:before {
+  content: '\005C';
+  margin-right: 0.4em;
+}
+
+.c-breadcrumb__step:hover{
+  color: var(--color-left-select);
+  cursor: pointer;
+}

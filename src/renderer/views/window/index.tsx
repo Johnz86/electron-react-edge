@@ -1,7 +1,7 @@
 import { isDevelopment } from "common/env";
 import classnames from "classnames";
 import React, { FunctionComponent } from "react";
-import Icon, {IconTypes} from "../../components/Icons";
+import Icon, {IconTypes} from "../../components/icons";
 import { remote } from "electron";
 import "./styles.css";
 

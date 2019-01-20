@@ -1,53 +1,100 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis|Raleway");
+@font-face {
+	font-family: system-ui;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: italic;
+	font-weight: 300;
+	src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: normal;
+	font-weight: 400;
+	src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: italic;
+	font-weight: 400;
+	src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: normal;
+	font-weight: 500;
+	src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: italic;
+	font-weight: 500;
+	src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: normal;
+	font-weight: 700;
+	src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+	font-family: system-ui;
+	font-style: italic;
+	font-weight: 700;
+	src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
 :root {
     /* Colors */
     --color-white: #ffffff;
-    --color-fire-bush: #e69b2f;
     --color-tahiti-gold: #e2890b;
-    --color-flush-mahogany: #c93536;
     --color-punch: #dc3a3a;
-    --color-bossanova: #522753;
     --color-black-pearl: #040624;
     --color-black: #000000;
     --color-white-10: rgba(255, 255, 255, 0.1);
-    --color-white-20: rgba(255, 255, 255, 0.2);
     --color-white-30: rgba(255, 255, 255, 0.3);
-    --color-white-50: rgba(255, 255, 255, 0.5);
     --color-white-80: rgba(255, 255, 255, 0.8);
-    --color-bossanova-60: rgba(82, 39, 83, 0.6);
-    --color-black-pearl-50: rgba(8, 8, 14, 0.5);
     --color-black-pearl-80: rgba(8, 8, 14, 0.8);
     --color-black-10: rgba(0, 0, 0, 0.1);
     --color-black-30: rgba(0, 0, 0, 0.3);
     --color-black-40: rgba(0, 0, 0, 0.4);
     --color-black-60: rgba(0, 0, 0, 0.6);
+    --color-left-background: #333333;
+    --color-left-select: #ffffff;
+    --color-left-text: #adadad;
+    --color-sidebar-text: #cccccc;
+    --color-sidebar-content: #252526;
+    --color-sidebar-select: #3f3f46;
+    --color-sidebar-header: #383838;
+    --color-main-background: #1e1e1e;
+    --color-main-separator: #404041;
+    --color-tab-background: #252526;
+    --color-tab-default: #2d2d2d;
+    --color-tab-chosen: #1e1e1e;
+    --color-tab-text: #959595;
+    --color-tab-select: #fefefe;
+
     /* Generic names for primary color */
     --color-primary: var(--color-tahiti-gold);
-    --color-lighten-primary: var(--color-fire-bush);
     /* Font families */
-    --font-family-dosis: Dosis, sans-serif;
-    --font-family-raleway: Raleway, sans-serif;
+    --font-family-default: system-ui;
     /* Font size */
-    --font-size-title: 30px;
     --font-size-subtitle: 20px;
-    --font-size-bigger: 16px;
     --font-size-default: 14px;
-    --font-size-small: 12px;
     /* Font weight */
-    --font-weight-dosis-regular: 400;
-    --font-weight-dosis-medium: 500;
-    --font-weight-dosis-semibold: 600;
-    --font-weight-dosis-bold: 700;
-    --font-weight-raleway-regular: 400;
-    --font-weight-raleway-medium: 500;
-    --font-weight-raleway-semibold: 600;
-    --font-weight-raleway-bold: 700;
+    --font-weight-default-medium: 500;
     /* Fonts */
-    --font-title: var(--font-weight-raleway-bold) var(--font-size-title) var(--font-family-raleway);
-    --font-subtitle: var(--font-weight-dosis-semibold) var(--font-size-subtitle) var(--font-family-dosis);
-    --font-bigger: var(--font-weight-dosis-bold) var(--font-size-bigger) var(--font-family-dosis);
-    --font-default: var(--font-weight-raleway-medium) var(--font-size-default) var(--font-family-raleway);
-    --font-label: var(--font-weight-raleway-medium) var(--font-size-default) var(--font-family-raleway);
+    --font-default: var(--font-weight-default-medium) var(--font-size-default) var(--font-family-default);
     /* Shadows */
     --box-shadow-default: 0 15px 40px rgba(0, 0, 0, 0.3);
     --text-shadow-default: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -58,17 +105,6 @@
     --header-height: 50px;
     --aside-width: 70px;
     --img-space: 12px;
-}
-
-.m-app__darwin {
-    --font-weight-dosis-regular: 300;
-    --font-weight-dosis-medium: 400;
-    --font-weight-dosis-semibold: 500;
-    --font-weight-dosis-bold: 600;
-    --font-weight-raleway-regular: 300;
-    --font-weight-raleway-medium: 400;
-    --font-weight-raleway-semibold: 500;
-    --font-weight-raleway-bold: 600;
 }
 
 *,
@@ -144,55 +180,25 @@ a {
     background: var(--color-primary);
 }
 
+::-webkit-scrollbar {
+    width: var(--img-space);
+    height: var(--img-space);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-main-separator);
+    box-shadow: var(--box-shadow-default);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--color-sidebar-header);
+}
+
 .no-animation,
 .no-animation * {
     animation: none !important;
-}
-
-.separator {
-    --separator-size: 10px;
-    --separator-spacing: 4px;
-    --separator-color: var(--color-white-30);
-    display: block;
-    border: none;
-    margin: 30px auto;
-    pointer-events: none;
-    text-align: center;
-    width: var(--separator-size);
-    height: var(--separator-size);
-}
-
-.separator::after {
-    content: "";
-    display: inline-block;
-    border: none;
-    background: var(--separator-color);
-    width: var(--separator-size);
-    height: var(--separator-size);
-    transform: rotate(45deg);
-    opacity: 0.8;
-    pointer-events: none;
-    box-shadow: calc(-1 * (var(--separator-size) + var(--separator-spacing))) calc(var(--separator-size) + var(--separator-spacing)) 0 var(--separator-color), calc(var(--separator-size) + var(--separator-spacing)) calc(-1 * (var(--separator-size) + var(--separator-spacing))) 0 var(--separator-color);
-}
-
-.form-group {
-    margin: 20px 0;
-}
-
-.form-group p {
-    margin: 0 0 10px;
-}
-
-.form-group--title {
-    display: block;
-    font: var(--font-bigger);
-    font-weight: var(--font-weight-dosis-bold);
-    line-height: 18px;
-    margin: 0 0 7px;
-    color: var(--color-white);
-}
-
-.form-group:last-child,
-.form-group:last-child> :last-child {
-    margin-bottom: 0;
 }

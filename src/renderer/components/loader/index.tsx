@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import "./styles.css";
 
-const Loading: FunctionComponent = props => {
+const Loader: FunctionComponent = props => {
   return (
     <React.Fragment>
       <div id="loading" className="m-window-loading">
@@ -25,4 +25,4 @@ const Loading: FunctionComponent = props => {
   );
 };
 
-export default Loading;
+export default Loader;

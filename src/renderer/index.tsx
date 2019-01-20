@@ -2,11 +2,11 @@ import Langs from "common/langs";
 import React from "react";
 import { render } from "react-dom";
 import { ipcRenderer, remote } from "electron";
-import Loading from "./components/Loading";
-import App from "./views/App";
+import Loader from "./components/loader";
+import App from "./views/app";
 import "./assets/main.css";
 
-render(<Loading><App /></Loading>, document.getElementById("app"));
+render(<Loader><App /></Loader>, document.getElementById("app"));
 
 const loader = () => {
   const loading = document.getElementById("loading")!;
@@ -19,7 +19,7 @@ const loader = () => {
     const container = document.getElementById("container")!;
     container.classList.add("show");
     loading.remove();
-  }, 100);
+  }, 2000);
 };
 
 loader();

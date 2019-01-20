@@ -2,8 +2,9 @@ import Langs from "common/langs";
 import React, { FunctionComponent } from "react";
 import classnames from "classnames";
 import { remote } from "electron";
-import WindowControls from "../WindowControls";
+import WindowControls from "../window";
 import "./styles.css";
+import Navigation from "../navigation";
 
 const App: FunctionComponent = () => {
 
@@ -16,7 +17,7 @@ const App: FunctionComponent = () => {
         "m-app__fullscreen": windowIsFullscreen,
         "m-app__maximized": windowIsMaximized
     });
-    return (<div id="app" className={classes}>
+    return (<div className={classes}>
         {!windowIsFullscreen && <WindowControls />}
 
         <div className="m-app-container">
@@ -26,6 +27,7 @@ const App: FunctionComponent = () => {
                     <span>{Langs.go("app.name")}</span>
                 </div>
             </header>
+            <Navigation />
         </div>
     </div>
     );
